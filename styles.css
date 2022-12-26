@@ -1,0 +1,339 @@
+@font-face {
+  src: url('./materials/Chivo_Mono/ChivoMono-Italic-VariableFont_wght.ttf');
+  font-family: "ChovoMono";
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--primColor);
+    font-family: "ChovoMono", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    animation: gradient 5s infinite alternate linear;
+    background: hsl(199, 72%, 80%);
+   }
+@keyframes gradient {
+    100% {
+    background: hsl(324, 54%, 72%);
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 760px));
+    grid-template-rows: auto;
+    background-color: #EAE1D0;
+}
+
+section {
+    min-height: 100px;
+    margin: 5px 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding-left: 2%;
+}
+
+.aboutme {
+  border: 2mm ridge rgba(213, 193, 154, .3);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+/* Опыт работы */
+.experience {
+    background-color: #efd5a5;
+}
+
+.strateg, .sportparad, .express {
+  border: 2mm ridge rgba(213, 193, 154, .3);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+/* Образование  */
+.courses, .languages, .univarsity {
+  border: 2mm ridge rgba(213, 193, 154, .3);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+/* Контакты */
+#contacts {
+  display: inline;
+  border: 2mm ridge rgba(213, 193, 154, .3);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+#social {
+  background-color: #efd5a5;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.social-link ul li{
+  display: inline;
+}
+
+.social-link ul li img {
+  vertical-align: center;
+  width: 80px;
+}
+
+/* фото */
+.photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-top: solid 2px;
+    border-bottom: solid 2x;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    line-height: 130px;
+    background-color: rgb(148, 57, 232);
+  }
+
+  .photo img {
+    vertical-align: center;
+    width: 200px;
+    }
+
+/* Диаграмма */
+.graph {
+  background-color: #efd5a5;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
+}
+
+.bar-graph-container {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    width: 80%;
+    overflow: auto;
+  }
+
+.bar-graph-container p {
+  padding: 15px;
+  color: #fff;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(-200%);
+   }
+   70% {
+     -webkit-transform: translateX(2%);
+   }
+   100% {
+     -webkit-transform: translateX(0);
+   }
+ }
+
+ @keyframes slide-left {
+   0% {
+     -webkit-transform: translateX(-200%);
+   }
+
+   70% {
+     -webkit-transform: translateX(2%);
+   }
+
+   100% {
+     -webkit-transform: translateX(0);
+   }
+ }
+
+ .bar-container {
+      background-color: rgba(140, 51, 142, 0.6);
+ }
+
+ .python {
+   width: 55%;
+   background-color: #78aa9e;
+   animation: slide-left 0.9s ease-in-out 1s both;
+   -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+   animation-delay: 0.1s;
+   -webkit-animation-delay: 0.1s;
+ }
+
+ .js {
+   width: 45%;
+   background-color: #78aa9e;
+   animation: slide-left 1s ease-in-out 1s both;
+  -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.2s;
+   -webkit-animation-delay: 0.2s;
+ }
+
+ .css {
+   width: 60%;
+   background-color: #78aa9e;
+   animation: slide-left 1s ease-in-out 1s both;
+   -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.3s;
+   -webkit-animation-delay: 0.3s;
+ }
+
+ .htm {
+   width: 65%;
+   background-color: #78aa9e;
+   animation: slide-left 1s ease-in-out 1s both;
+   -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.4s;
+   -webkit-animation-delay: 0.4s;
+ }
+
+ .sql {
+   width: 50%;
+   background-color: #78aa9e;
+   animation: slide-left 1s ease-in-out 1s both;
+   -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.4s;
+   -webkit-animation-delay: 0.4s;
+ }
+
+ .git {
+   width: 70%;
+   background-color: #78aa9e;
+   animation: slide-left 1s ease-in-out 1s both;
+   -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.4s;
+   -webkit-animation-delay: 0.4s;
+ }
+
+ /* Футер */
+ .container {
+    width: 100%;
+    text-align: center;
+    background-color: #dcdcdc;
+ }
+
+  /* Главное меню */
+  :root {
+    --primColor: #dcdcdc;
+    --secoColor: #555555;
+    --cornerRad: 4px;
+  }
+
+  details {
+    margin: 10px;
+  }
+
+  summary {
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 12px 10px;
+    width: 23px;
+    height: 17px;
+    background-color: var(--primColor);
+    border: 2px solid var(--secoColor);
+    border-radius: var(--cornerRad);
+    color: var(--secoColor);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: transform 200ms ease-in-out 0s;
+  }
+
+  summary::before,
+  summary::after {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+
+  summary::before {
+    content: "";
+  }
+
+  summary::after {
+    font-family: Arial, Helvetica, sans-serif;
+    content: "III";
+    letter-spacing: -1px;
+  }
+
+  summary:hover {
+    transform: scale(1.1);
+  }
+
+  summary::marker {
+    font-size: 0;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] .menu {
+    animation-name: menuAnim;
+  }
+
+  details[open] summary::before {
+    content: "X";
+  }
+
+  details[open] summary::after {
+    content: "";
+  }
+
+  .menu {
+    height: 0;
+    width: fit-content;
+    border-radius: var(--cornerRad);
+    background-color: var(--primColor);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: closeMenu 300ms ease-in-out forwards;
+  }
+
+  .menu a {
+    padding: 12px 24px;
+    margin: 0 16px;
+    color: var(--secoColor);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+  }
+
+  .menu a:nth-of-type(1) {
+    padding-top: 24px;
+  }
+
+  .menu a:nth-last-of-type(1) {
+    border-bottom: none;
+  }
+
+  .menu a:hover {
+    filter: brightness(200%);
+  }
+
+  details[open]::before {
+    animation: fadeMe 300ms linear forwards;
+  }
+
+  @keyframes menuAnim {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 170px;
+    }
+  }
+
+  @keyframes fadeMe {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
