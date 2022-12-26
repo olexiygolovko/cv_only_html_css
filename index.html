@@ -80,14 +80,12 @@
     <section>
       <h2>Education</h2>
       <div class="univarsity">
-          <h3>Master</h3>
-          <h4>2015</h4>
+          <h3>Master - 2015</h3>
           <span>
               <p>Moscow University. S.Yu. Witte, Moscow</p>
               <p>Faculty of Economics and Finance, Economics</p>
           </span>
-          <h3>Undergraduate</h3>
-          <h4>2013</h4>
+          <h3>Undergraduate - 2015</h3>
           <span>
               <p>Luhansk National University named after. T. Shevchenko,</p>
               <p>Lugansk Economics and business, Marketing</p>
@@ -98,8 +96,7 @@
     <section class="courses">
       <h2>Advanced training courses</h2>
       <div>
-          <h3>SkillFactory</h3>
-          <h4>2023</h4>
+          <h3>SkillFactory - 2023</h3>
           <span>
               <p>Fullstack Python developer</p>
           </span>
@@ -122,33 +119,62 @@
     <h3>LLC "Digital Strategy"</h3>
     <h5>March 2015 - present 7 years 7 months</h5>
     <h4>Lead Advertising Manager</h4>
-    <span>
+    <button type="button" class="collapsible">List of duties performed</button>
+      <span class="content">
         <p>- Identification of needs, presentation of the company's services, negotiations and conclusion of contracts.</p>
         <p>- drawing up a strategy, segmentation;</p>
         <p>- compilation of the semantic core, preparation of promotional materials, preparation of content plans;</p>
         <p>- setting up analytics tools - Yandex.Metrica, Google Analytics;</p>
-    </span>
+        <p>- setting up and maintaining advertising campaigns in Yandex.Direct, Google Ads, VK target, FaceBook, Instagram;</p>
+        <p>- site optimization - seo, internal optimization. Implementation of the main stages - robots.txt, Sitemap, tags, seo-texts;</p>
+        <p>- preparation of reports, audits, development of media plans</p>
+        <p>- work with the documentation.</p>
+      </span>
     </div>
     <div class="sportparad">
     <h3>LLC "Sportparad"</h3>
     <h5>June 2014 — February 2015 9 months</h5>
     <h4>Website monetization manager</h4>
-    <span>
+    <button type="button" class="collapsible">List of duties performed</button>
+    <span class="content">
         <p>- search for advertisers to place advertisements on the portal</p>
         <p>- organization of meetings and presentations of the company;</p>
         <p>- portal analytics - Yandex.Metrica;</p>
+        <p>- branding of the company, according to the way of participation in sports events as an information partner;</p>
+        <p>- preparation of materials for placement</p>
+        <p>- preparation of reports, work with closing documents.</p>
     </span>
     </div>
     <div class="express">
         <h3>"Express Preprint" (printing house)</h3>
         <h5>September 2013 — May 2014 9 months</h5>
         <h4>Sales Manager</h4>
-    <span>
+    <button type="button" class="collapsible">List of duties performed</button>
+    <span class="content">
         <p>- Search for clients;</p>
+        <p>- Holding meetings and presentations of the company;</p>
         <p>- Acceptance of the project;</p>
+        <p>- Calculation of the cost of manufacturing printed products and creating a design;</p>
+        <p>- Control of payment terms under the project;</p>
         <p>- Project management up to the stage of delivery to the customer.</p>
     </span>
     </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
   </section>
 
     <!-- Контакты -->

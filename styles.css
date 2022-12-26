@@ -53,6 +53,38 @@ h1, h2, h3, h4, h5, h6, p{
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
 
+.collapsible {
+  background-color: #82c0b2;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: "ChovoMono", Arial, Helvetica, sans-serif;
+}
+
+.collapsible::after {
+  content: "➕";
+  display: inline;
+  right: 30px;
+  margin-left: 60%;
+}
+
+.active, .collapsible:hover {
+  background-color: #78aa9e;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #efd5a5;
+}
+
+
 /* Образование  */
 .courses, .languages, .univarsity {
   border: 2mm ridge rgba(213, 193, 154, .3);
